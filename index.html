@@ -7,19 +7,25 @@
     <title>Game!</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css">
     <link rel="icon" href="http://static1.squarespace.com/static/55653a36e4b086f545c30987/t/56e9c1794d088e6bdcf00041/1458159994840/Favicon.png?format=1000w" type="image/gif" sizes="16x16">
-
-
-
-
-
-
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <h3>Guess it!</h3>
 <div class="alert alert-dismissible alert-primary">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Oh snap!</strong> <a href="#" class="alert-link">You have stumbled upon a guessing game!</a> Do you have what it takes to win?.
+        <button type="button" class="close" data-dismiss="alert">&times;</button><h5>
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">You have stumbled upon a guessing game!</a> Do you have what it takes to win?.</h5>
       </div>
-    
+
+      <div class="card border-primary mb-3" style="max-width: 100rem; margin: auto;">
+            <div class="card-header"><h4>Guess it!</h4></div>
+            <div class="card-body">
+      <h4>Guess what letter I'm thinking of!</h4>
+      <p class="text-info">Wins: <script src="assets/javascript/game.js"></script></p>
+      <p class="text-danger">Losses: <script src="assets/javascript/game.js"></script></p>
+      <p class="text-warning">Guesses Left: <script src="assets/javascript/game.js"></script></p>
+      <p class="text-muted">Your guesses so far: <script src="assets/javascript/game.js"></script></p>
+</div></div>
+
+
 </body>
 </html>
