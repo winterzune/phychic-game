@@ -10,19 +10,50 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<!--intro-->
 <h3>Guess it!</h3>
 <div class="alert alert-dismissible alert-primary">
         <button type="button" class="close" data-dismiss="alert">&times;</button><h5>
         <strong>Oh snap!</strong> <a href="#" class="alert-link">You have stumbled upon a guessing game!</a> Do you have what it takes to win?.</h5>
       </div>
-
+<!--where the content lives-->
       <div class="card border-primary mb-3" style="max-width: 100rem; margin: auto;">
             <div class="card-header"><h4>Guess it!</h4></div>
             <div class="card-body">
       <h4>Guess what letter I'm thinking of!</h4>
-      <p class="text-info">Wins: <script src="assets/javascript/game.js"></script></p>
+<!--
+Win counter
+-->
+<p class="text-info"; id="wins">Wins: </p>
+<!--<script>
+    var answer, counter; // variables
+    answer = x; // answer
+    function keys (onKeydown; // meaning when detecting keystroke
+    counter = 0; // start of the counter
+    if {
+keys = x; // if true
+display counter + 1; // add 1
+    }
+    else {
+        display counter + 0; // if not add 0
+    }
+    document.getElementById("demo").innerHTML = "Wins:" + counter;
+</script> -->
+
+<!--
+loss counter
+-else var=flase then loss+1
+-->
       <p class="text-danger">Losses: <script src="assets/javascript/game.js"></script></p>
+<!--
+tries counter
+- var tries / / tries + 1
+-->
       <p class="text-warning">Guesses Left: <script src="assets/javascript/game.js"></script></p>
+<!--
+letters counter
+- var letters / / display letters used
+-->
       <p class="text-muted">Your guesses so far: <script src="assets/javascript/game.js"></script></p>
 </div></div>
 
