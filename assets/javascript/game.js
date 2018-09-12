@@ -68,6 +68,8 @@ window.onload = function () {
             } else {
                 alert("you lost");
                 linkz();
+
+                location.reload();
             };
         };
 
