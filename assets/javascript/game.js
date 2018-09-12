@@ -1,5 +1,5 @@
 
-//created array, idea is if user guesses all the letters in the array to form the chosen word (carbon), then they win.
+//created array, user has to guess the chosen letters until tries runs out
 
 
 window.onload = function () {
@@ -36,17 +36,17 @@ window.onload = function () {
         console.log(computerguess);
 
 
-        //conditions set broad for now, so if user guesses c or a or ....
-        if (userguess == computerguess) { //|| (userguess == "a") || (userguess == "r") || (userguess == "b") || (userguess == "o") || (userguess == "n")) {
+        //user key presses vs the random number
+        if (userguess == computerguess) { 
 
-            // I'm confused with syntax, as to how to say what I want with js. I understand I'm adding here, but I'm not sure if all I need is to say return or what.
+            // counter for wins start, attempts start to decrease
             wins++;
             tries = tries - 1;
             wincounter = "Wins: " + wins;
             linkz();
 
         } else {
-
+// counter for losses start and attempts continue to decrease
             loss++;
             tries = tries - 1;
             losscounter = "Losses: " + loss;
@@ -56,7 +56,7 @@ window.onload = function () {
         };
 
 
-        // tries counter || if tries reaches 0, display alert message "you lost!" || I am not sure if this if should be inside the brackets. I don't think it's an else if. 
+        // tries counter || if tries reaches 0, it will then return a win or a lost message 
         random = Math.floor(Math.random() * altered.length) + 0;
         computerguess = altered[random]
 
@@ -75,15 +75,6 @@ window.onload = function () {
 
 
     };
-
-    //would do the same for the losing counter
-    //var losscount = document.getElementById("losscounter");
-
-    // code that states that if the letter pressed is < aletered.length
-
-
-
-    //not sure how to store the incorrect keypresses and display them into the website.
 
 
 
